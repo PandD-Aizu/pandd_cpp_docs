@@ -215,6 +215,8 @@ $\vdots$
 28
 ```
 
+以降の問題は取り組むかは自由です。
+
 **おまけ1 Projection** (☆☆☆☆☆)
 
 https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_A より
