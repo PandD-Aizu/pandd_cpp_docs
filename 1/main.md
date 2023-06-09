@@ -119,10 +119,10 @@ C++のコードを実行する環境として、今回は以下の３つのう�
 #include <iostream>
 
 int main() {
-    std::cout << "3つの整数を空白区切りで入力してください" << std::endl;
-    int a, b, c;
-    std::cin >> a >> b >> c;
-    std::cout << "和は " << a + b + c << " です" << std::endl;
+  std::cout << "3つの整数を空白区切りで入力してください" << std::endl;
+  int a, b, c;
+  std::cin >> a >> b >> c;
+  std::cout << "和は " << a + b + c << " です" << std::endl;
 }
 ```
 Wandboxを利用している人は、画面右に「標準入力」というタブがあると思います。それをクリックして開いて整数を３つ入力してください。実行を押すと入力内容を受け取ってプログラムを実行します。
@@ -162,7 +162,7 @@ g++ sample.cpp
 
 ```cpp
 int main() {
-	return 0;
+  return 0;
 }
 ```
 `return 0`前の空白はタブキーを押すことで再現することができます(この空白をインデントといいます)。反対に、Shiftを押しながらタブキーを押すことでこの空白が引っ込みます。
@@ -193,8 +193,8 @@ int main() {
 #include <iostream>
 
 int main() {
-	std::cout << "Hello World" << std::endl;
-	return 0;
+  std::cout << "Hello World" << std::endl;
+  return 0;
 }
 ```
 
@@ -250,10 +250,10 @@ std::endl;
 #include <iostream>
 
 int main() {
-    std::cout << 2 << std::endl; // 2を出力する
-    std::cout << 1.5 << std::endl; // 1.5を出力する
-    std::cout << 0 << std::endl; // 0を出力する
-    return 0;
+  std::cout << 2 << std::endl; // 2を出力する
+  std::cout << 1.5 << std::endl; // 1.5を出力する
+  std::cout << 0 << std::endl; // 0を出力する
+  return 0;
 }
 ```
 
@@ -279,12 +279,12 @@ std::cout << 2 << std::endl; // 2を出力する
 #include <iostream>
 
 int main() {
-    std::cout << 2 + 3 << std::endl; // 2 + 3 を出力する
-    std::cout << 5 - 1 << std::endl; // 5 - 4 を出力する
-    std::cout << 100 * 900 << std::endl; // 100 x 900を出力する
-    std::cout << 7 / 2 << std::endl; // 7 ÷ 2 を出力する
-    std::cout << 10 % 3 << std::endl; // 10を3で割った余りを出力する
-    return 0;
+  std::cout << 2 + 3 << std::endl; // 2 + 3 を出力する
+  std::cout << 5 - 1 << std::endl; // 5 - 4 を出力する
+  std::cout << 100 * 900 << std::endl; // 100 x 900を出力する
+  std::cout << 7 / 2 << std::endl; // 7 ÷ 2 を出力する
+  std::cout << 10 % 3 << std::endl; // 10を3で割った余りを出力する
+  return 0;
 }
 ```
 
@@ -296,12 +296,12 @@ int main() {
 #include <iostream>
 
 int main() {
-    std::cout << 2 + 3 * 4 << std::endl; // 14
-    std::cout << (2 + 3) * 4 << std::endl; // 20
+  std::cout << 2 + 3 * 4 << std::endl; // 14
+  std::cout << (2 + 3) * 4 << std::endl; // 20
 
-    std::cout << 3 * 4 + 2 * 5 << std::endl; // 22
-    std::cout << 3 * (4 + 2) * 5 << std::endl; // 90
-    return 0;
+  std::cout << 3 * 4 + 2 * 5 << std::endl; // 22
+  std::cout << 3 * (4 + 2) * 5 << std::endl; // 90
+  return 0;
 }
 ```
 
@@ -321,10 +321,10 @@ int main() {
 #include <iostream>
 
 int main() {
-	int value;
-	std::cin >> value;
-	std::cout << value << "が入力されました。" << std::endl;
-	return 0;
+  int value;
+  std::cin >> value;
+  std::cout << value << "が入力されました。" << std::endl;
+  return 0;
 }
 ```
 
@@ -372,13 +372,13 @@ std::cin >> super_long_long_long_long_long_name_value;
 #include <iostream>
 
 int main() {
-	double value1;
-	std::cin >> value1;
-	int value2;
-	std::cin >> value2;
-	std::cout << "value1 is " << value1 << std::endl;
-	std::cout << "value2 is " << value2 << std::endl;
-	return 0;
+  double value1;
+  std::cin >> value1;
+  int value2;
+  std::cin >> value2;
+  std::cout << "value1 is " << value1 << std::endl;
+  std::cout << "value2 is " << value2 << std::endl;
+  return 0;
 }
 ```
 1.5を入力したはずなのに、value2が1になっていますね。このように結果が変わってしまう原因は`int`と `double`の違いにあります。
@@ -502,10 +502,10 @@ int main() {
 
 typedef struct Node *NodePointer;
 struct Node {
-    int key;
-    int priority;
-    NodePointer left;
-    NodePointer right;
+  int key;
+  int priority;
+  NodePointer left;
+  NodePointer right;
 };
 
 NodePointer root;
@@ -521,91 +521,91 @@ NodePointer find(int);
 NodePointer delete(NodePointer, int);
 
 int main() {
-    int num_query;
-    scanf("%d", &num_query);
+  int num_query;
+  scanf("%d", &num_query);
 
-    for (int i = 0 ; i < num_query ; i++) {
-        char query[7];
-        scanf("%s", query);
-        
-        if (query[0] == 'i') {
-            int key, priority;
-            scanf("%d%d", &key, &priority);
-            root = insert(root, key, priority);
-        }
-
-        else if (query[0] == 'f') {
-            int key;
-            scanf("%d", &key);
-                NodePointer x = find(key);
-            if (x != NULL)
-                printf("yes\n");
-            else
-                printf("no\n");
-        }
-
-        else if (query[0] == 'd') {
-            int key;
-            scanf("%d", &key);
-            root = delete(root, key);
-        }
-
-        else if (query[0] == 'p') {
-            inorder_walk(root);
-            printf("\n");
-            preorder_walk(root);
-            printf("\n");
-        }
+  for (int i = 0 ; i < num_query ; i++) {
+    char query[7];
+    scanf("%s", query);
+    
+    if (query[0] == 'i') {
+      int key, priority;
+      scanf("%d%d", &key, &priority);
+      root = insert(root, key, priority);
     }
+
+    else if (query[0] == 'f') {
+      int key;
+      scanf("%d", &key);
+        NodePointer x = find(key);
+      if (x != NULL)
+        printf("yes\n");
+      else
+        printf("no\n");
+    }
+
+    else if (query[0] == 'd') {
+      int key;
+      scanf("%d", &key);
+      root = delete(root, key);
+    }
+
+    else if (query[0] == 'p') {
+      inorder_walk(root);
+      printf("\n");
+      preorder_walk(root);
+      printf("\n");
+    }
+  }
 
 }
 
 NodePointer create_node() {
-    NodePointer x = (NodePointer)malloc(sizeof(struct Node));
-    return x;
+  NodePointer x = (NodePointer)malloc(sizeof(struct Node));
+  return x;
 }
 
 
 NodePointer find(int key) {
-    NodePointer x = root;
-    while(x != NULL) {
-        if (x->key == key)
-            return x;
-        else if (x->key > key)
-            x = x->left;
-        else
-            x = x->right;
-    }
+  NodePointer x = root;
+  while(x != NULL) {
+    if (x->key == key)
+      return x;
+    else if (x->key > key)
+      x = x->left;
+    else
+      x = x->right;
+  }
 
-    return x;
+  return x;
 }
 
 NodePointer delete(NodePointer t, int key) {
-    if (t == NULL)
-        return NULL;
-    
-    if (key < t->key)
-        t->left = delete(t->left, key);
-    else if (key > t->key)
-        t->right = delete(t->right, key);
+  if (t == NULL)
+    return NULL;
+  
+  if (key < t->key)
+    t->left = delete(t->left, key);
+  else if (key > t->key)
+    t->right = delete(t->right, key);
+  else {
+    if (t->left == NULL && t->right == NULL)
+      return NULL;
+    else if (t->left == NULL)
+      t = left_rotate(t);
+    else if (t->right == NULL)
+      t = right_rotate(t);
     else {
-        if (t->left == NULL && t->right == NULL)
-            return NULL;
-        else if (t->left == NULL)
-            t = left_rotate(t);
-        else if (t->right == NULL)
-            t = right_rotate(t);
-        else {
-            if (t->left->priority > t->right->priority)
-                t = right_rotate(t);
-            else
-                t = left_rotate(t);
-        }
-
-        return delete(t, key);
+      if (t->left->priority > t->right->priority)
+        t = right_rotate(t);
+      else
+        t = left_rotate(t);
     }
-    
-    return t;
+
+    return delete(t, key);
+  }
+  
+  return t;
 }
 ```
 
@@ -629,12 +629,12 @@ s1290001 愛澤透哉
 
 さらにコードの中身にも
 ```c
-        // クエリの文字列の最初の文字で、クエリの種類を特定する
-        if (query[0] == 'i') {
-            int key, priority;
-            scanf("%d%d", &key, &priority);
-            root = insert(root, key, priority);
-        }
+    // クエリの文字列の最初の文字で、クエリの種類を特定する
+    if (query[0] == 'i') {
+      int key, priority;
+      scanf("%d%d", &key, &priority);
+      root = insert(root, key, priority);
+    }
 ```
 みたいなことが書いてあれば、`if (query[0] == 'i')`という意図の不明な条件分岐にも、目的がわかります。
 - `if`文は次回勉強会で取り扱います。条件分岐ができるようになります。
