@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # pandd cpp docs
 
 企画開発部、プログラマ勉強会の新資料
