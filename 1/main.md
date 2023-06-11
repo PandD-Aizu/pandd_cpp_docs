@@ -37,44 +37,49 @@ layout: default
 
 (*がついたものは、勉強会では端折る可能性が高いですが、資料には追記しておく予定です)
 
-- 基本的な出力方法
-	- 四則演算・剰余
-- `std::vector`
-	- `operator []`
-	- `push_back()`*
-	- `pop_back()`*
-	- `iterator`*
-- 条件分岐(if文、switch-case文)
-	- 論理演算子
-	- 比較演算子
-	- 短絡評価*
-- 繰り返し
-	- `for`
-	- `while`
-	- `continue`
-	- `break`
-	- `range based for`*
+- 入出力
+   - `std::cin、std::cout`
+   - `std::cerr` *
+   - `std::scanf, std::printf *
+- 算術演算
+   - `+`、`-`、`*`、`/`、`%`
+   - 算術演算関数オブジェクト*
+- 型
+   - 組み込み型
+- コメント
+   - `/**/`、`//`
+- 条件分岐
+   - `if`
+   - `switch-case`*
+- ループ
+   - `for`
+   - `while`
+   - `do-while` *
+- 論理演算子
+- 配列
+   - 普通の配列 *
+   - `std::vector`
+   - `std::string`
 - 関数
-	- 値渡しと参照渡し
-	- 返り値、値返却型
-	- スコープの概念
-    - ラムダ式 *
-    - 関数オブジェクト *
-    - `std::function` *
+   - スコープの話
+   - 引数の種類
+       - 値渡し、参照渡し、const参照渡し
+   - ラムダ式 *
+   - 関数オブジェクト * 
 - `class`
-	- `private`と`public`
-	- コンストラクタ
-	- デストラクタ*
-	- メンバ
-	- 継承
-- `namespace`*
-- `enum, enum class`*
-- `STL`*
-	- `std::set`
-	- `std::map`
-	- `std::sort`
-	- `std::max_element`
-	- `std::accumulate`
+   - メンバ
+   - コンストラクタ
+   - `private`と`public`
+   - 継承*
+   - 仮想関数*
+- ファイル分割
+   - `hpp`と`cpp`
+   - `include`
+- `namespace` *
+- 演算子のオーバーロード *
+- 列挙型 *
+   - `enum`
+   - `enum class` 
 
 <br />
 
