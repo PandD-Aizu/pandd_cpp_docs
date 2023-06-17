@@ -13,3 +13,4 @@ layout: default
 
 ## 第二回
 - [資料](2/main.md)
+- [演習](2/ex.md)
