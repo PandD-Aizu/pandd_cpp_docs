@@ -98,7 +98,7 @@ int main() {
     std::cout << ans << std::endl;
     return 0;
 }
-```cpp
+```
 
 整数同士の割り算は小数点以下が切り捨てされることを利用します。
 
