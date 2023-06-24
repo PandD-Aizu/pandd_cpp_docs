@@ -77,7 +77,7 @@ int main() {
     int a, b;
     std::cin >> a >> b;
     bool isSame = (a == b);
-    std::count << isSame << std::endl;
+    std::cout << isSame << std::endl;
     return 0;
 }
 ```
@@ -251,7 +251,6 @@ int main() {
 2. `false < true`の真理値は？
 3. `(0 + 1)`の真理値は？
 4. `(1 + 1) == true`の真理値は？
-5. `true == (1 + 1)`の真理値は？
 
 <br />
 
@@ -466,14 +465,13 @@ int main() {
 #include <iostream>
 
 int main() {
-    int value = 1;
-    while (value <= 10) {
-        if (value == 4 or value == 9) {
-            value++;
-            continue;
-        }
-        std::cout << value << std::endl;
+    int value = 0;
+    while (value < 10) {
         value++;
+        if (value == 4 or value == 9) {
+            continue;
+        } 
+        std::cout << value << std::endl;
     }
     return 0;
 }
@@ -509,9 +507,9 @@ int main() {
         if (ok) { // okならば、素数なので出力する
             std::cout << value << ' ';
         }
-        std::cout << std::endl;
         value++;
     }
+    std::cout << std::endl;
     return 0;
 }
 ```
