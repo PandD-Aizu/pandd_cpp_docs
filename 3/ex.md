@@ -122,14 +122,11 @@ B_M1 B_M2 ... B_MK
 1 0
 5 2
 3 1
+```
 
 ```
 8 3
 5 2
-```
-
-```
-Yes
 ```
 
 入出力 $2$
@@ -164,9 +161,3 @@ Yes
 6
 9
 ```
-
-問題 $4$ Euclid Distance (O)
-
-問題 $5$ Average And Variance (OO)
-
-おまけ Equaion
