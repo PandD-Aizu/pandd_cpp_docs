@@ -23,3 +23,4 @@ layout: default
 
 ## 第四回
 - [資料](4/main.md)
+- [演習](4/ex.md)
