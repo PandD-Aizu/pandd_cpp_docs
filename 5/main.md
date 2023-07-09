@@ -92,7 +92,7 @@ int main() {
 
 #### ちょっと練習
 
-1. $c = 1.5 + -3.0i$ を`std::complex`型で表現してみましょう。
+1. $c = 1.5 - 3.0i$ を`std::complex`型で表現してみましょう。
 2. `C++`のハッシュマップを試してみましょう[リファレンス](https://cpprefjp.github.io/reference/unordered_map/unordered_map.html)
 
 
